@@ -1,0 +1,14 @@
+/.idea/
+
+/cmake-build-debug/
+/CMakeFiles/
+
+*.s
+*.i
+
+/execasm
+/Makefile
+/cmake_install.cmake
+/execasm.cbp
+/CMakeCache.txt
+/fifo
