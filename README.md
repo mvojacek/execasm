@@ -26,14 +26,28 @@ code from previous packets (loops larger than 0xFF bytes, etc.)
 The stack has a fixed maximum size of 2048 bytes and resides in non-dynamic memory.
 
 The program itself is probably position-dependent, because I haven't writen
-the asm to be position-independent.
+the asm to be position-independent. But there is a chance it could run as is
+when compiled as pic/pie, feel free to test.
 
 You can't define local variables or constants, but a workaround
 is shown in pkt/datastore.pkt.
 
+Examples:
+
+```sh
+cat pkt/datastore.pkt pkt/stop.pkt | ./execasm /dev/fd/0
+```
+
+# Building
+
+```sh
+cmake .
+make
+```
+
 # Utils
 
-`./unhex` is a simple perl oneliner that translates hex pairs into bytes.
+`echo -n 001234ff | ./unhex` is a simple (perl) oneliner that translates hex pairs into bytes.
 
 [Defuse.ca Online x86 assembler](https://defuse.ca/online-x86-assembler.htm)
 is a very useful tool for these things. (not affiliated)
