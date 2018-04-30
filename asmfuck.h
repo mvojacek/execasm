@@ -17,6 +17,7 @@ typedef struct
 void sbox_asm_run(sbox_regs_t *reg, void *eip);
 
 uint64_t sbox_asm_trailer_start();
+
 uint64_t sbox_asm_trailer_end();
 
 #endif //EXECASM_ASMFUCK_H

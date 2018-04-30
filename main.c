@@ -79,7 +79,7 @@ int main(int argc, char **argv)
 
         err = exec_sandbox_asm(&sbox, packet, len);
         if (err != 0)
-            return 100+err;
+            return 100 + err;
     }
 
     munmap(sbox.mmap_code, sbox.mmap_code_size);
