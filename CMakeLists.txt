@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.9)
+cmake_minimum_required(VERSION 3.7.1)
 project(execasm C ASM)
 
 set(CMAKE_C_STANDARD 11)
