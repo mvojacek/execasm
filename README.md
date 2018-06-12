@@ -1,3 +1,4 @@
+![build status](https://gitlab.com/mvojacek/execasm/badges/master/build.svg)
 # ExecAsm
 
 This C/asm project implements a register+stack sandbox of sorts, so that
