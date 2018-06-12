@@ -3,6 +3,8 @@
 This C/asm project implements a register+stack sandbox of sorts, so that
 arbitrary snippets of machine code can be run and amended.
 
+[Download latest build](https://gitlab.com/mvojacek/execasm/-/jobs/artifacts/master/download?job=build)
+
 # Usage
 
 The program takes one commandline argument, the file from which it reads
